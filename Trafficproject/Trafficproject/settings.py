@@ -82,9 +82,10 @@ WSGI_APPLICATION = 'Trafficproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': "trafficProject",
         'CLIENT': {
-            'host': 'mongodb://localhost:27017/',  # URL de conexión a tu servidor MongoDB
+            'host': 'mongodb+srv://juan:<123>@cluster0.yzwseut.mongodb.net/?retryWrites=true&w=majority',  # URL de conexión a tu servidor MongoDB
+            "name":"hola",
+            "authMechanism":"SCRAM-SHA-1"
         }
     }
 }
